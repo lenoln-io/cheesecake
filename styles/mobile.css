@@ -1,0 +1,78 @@
+:root {
+    font-size: 62.5%;
+    font-family: 'Source Serif Pro', 'Times New Roman', sans-serif;
+    --text-color: #A54328;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    color: var(--text-color);
+}
+
+main {
+    max-width: 32rem;
+    padding: 5.3rem 3.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+
+    margin-inline: auto;
+    box-sizing: content-box;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    gap: 4.7rem;
+
+    max-width: 30.8rem;
+}
+           
+h1,  h2  {
+    font-size: clamp(2.8rem, 2vw + 0.8rem, 4rem);
+    line-height: clamp(2rem, 2vw + 1rem, 5rem);
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+}
+
+p, li, strong {
+    font-size: clamp(1.4rem, 1vw + 0.7rem, 2rem);
+    line-height: clamp(1.8rem, 2vw + 1rem, 3rem);
+}
+
+.how-to-do {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    max-width: 30.8rem;
+}
+
+ol, ul {
+    padding-left: 2.4rem;
+}
+
+.btn {
+    border: none;
+    border-radius: 6px;
+
+    background-color: var(--text-color);
+    color: #fff;
+    font-family: 'Source Serif 4', 'Times New Roman', sans-serif;
+    font-size: 1rem;
+    line-height: 1.7rem;
+
+    padding: 0.8rem 1.3rem;
+    margin-top: 4rem;
+
+    cursor: pointer;
+}
